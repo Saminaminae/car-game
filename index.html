@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bilspel – Canvas Racer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hud">
+    <div class="left">
+      <h1>Canvas Racer</h1>
+      <p>← → styr | ↑ gas | ↓ broms | P pausa | R reset</p>
+    </div>
+    <div class="right">
+      <div id="score">Poäng: 0</div>
+      <div id="speed">Fart: 0 km/h</div>
+      <div id="status"></div>
+    </div>
+  </div>
+
+  <canvas id="game" width="480" height="720" aria-label="Bilspel"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
