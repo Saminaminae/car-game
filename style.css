@@ -1,0 +1,70 @@
+:root {
+  color-scheme: dark;
+  --bg: #0d0f14;
+  --fg: #e8eaf0;
+  --accent: #00d4ff;
+  --warn: #ff4d6d;
+  --ok: #72efdd;
+  --road: #1b2330;
+  --lane: #dde2f7;
+  --grass: #0a7f40;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, #0b1020, var(--bg));
+  color: var(--fg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 16px;
+}
+
+.hud h1 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+}
+
+.hud p {
+  margin: 0;
+  opacity: 0.85;
+}
+
+.hud .right {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: end;
+  gap: 4px;
+  font-weight: 600;
+}
+
+#status {
+  min-height: 20px;
+  color: var(--warn);
+}
+
+#game {
+  display: block;
+  margin: 0 auto 24px auto;
+  border-radius: 12px;
+  background: radial-gradient(150% 100% at 50% 0%, #0f172a 0%, var(--bg) 65%);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.45),
+    inset 0 0 60px rgba(0,0,0,0.35);
+}
+
+/* Visuella vägfärger (målas i canvas men paletten finns här) */
+.palette {
+  --car: #00ff95;
+  --enemy: #ff3b3b;
+  --road: var(--road);
+  --lane: var(--lane);
+  --grass: var(--grass);
+}
